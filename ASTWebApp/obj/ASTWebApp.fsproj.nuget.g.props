@@ -17,7 +17,9 @@
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets\8.0.1\buildTransitive\net6.0\Microsoft.Extensions.Configuration.UserSecrets.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets\8.0.1\buildTransitive\net6.0\Microsoft.Extensions.Configuration.UserSecrets.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_AspNetCore_StaticFiles Condition=" '$(PkgMicrosoft_AspNetCore_StaticFiles)' == '' ">C:\Users\dttru\.nuget\packages\microsoft.aspnetcore.staticfiles\2.3.0</PkgMicrosoft_AspNetCore_StaticFiles>
     <PkgMicrosoft_AspNetCore Condition=" '$(PkgMicrosoft_AspNetCore)' == '' ">C:\Users\dttru\.nuget\packages\microsoft.aspnetcore\2.3.0</PkgMicrosoft_AspNetCore>
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\dttru\.nuget\packages\fsharp.core\9.0.201</PkgFSharp_Core>
+    <PkgFsLexYacc Condition=" '$(PkgFsLexYacc)' == '' ">C:\Users\dttru\.nuget\packages\fslexyacc\11.3.0</PkgFsLexYacc>
   </PropertyGroup>
 </Project>

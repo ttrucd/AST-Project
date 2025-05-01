@@ -53,6 +53,11 @@
               "version": "[9.0.201, )",
               "generatePathProperty": true
             },
+            "FsLexYacc": {
+              "target": "Package",
+              "version": "[11.3.0, )",
+              "generatePathProperty": true
+            },
             "Microsoft.AspNetCore": {
               "target": "Package",
               "version": "[2.3.0, )",
@@ -60,7 +65,8 @@
             },
             "Microsoft.AspNetCore.StaticFiles": {
               "target": "Package",
-              "version": "[2.3.0, )"
+              "version": "[2.3.0, )",
+              "generatePathProperty": true
             }
           },
           "imports": [

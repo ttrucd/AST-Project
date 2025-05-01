@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("ASTWebApp")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+376111dd97aab4e5ae414dd4c041c210dd52e036")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c7cf9e4c306776c3cea9f099aafd9271cea629f")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("ASTWebApp")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("ASTWebApp")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]
