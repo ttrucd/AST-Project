@@ -5,16 +5,13 @@ open Microsoft.Extensions.DependencyInjection
 open Giraffe
 open Microsoft.Extensions.Hosting
 
-// Define a simple handler to return a response
-let webApp =
-    choose [
-        GET >=> route "/" >=> text "Hello, world!"
-        GET >=> route "/about" >=> text "About Page"
-    ]
+open App
+
 
 // Configure services and application pipeline in one file
 let configureApp (app: IApplicationBuilder) =
-    app.UseGiraffe(webApp)
+    app.UseStaticFiles() |>ignore
+    app.UseGiraffe(webApp())
 
 let configureServices (services: IServiceCollection) =
     services.AddGiraffe() |> ignore

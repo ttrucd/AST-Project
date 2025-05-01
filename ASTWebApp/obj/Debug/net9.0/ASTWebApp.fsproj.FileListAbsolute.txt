@@ -10,8 +10,6 @@ C:\Users\dttru\OneDrive\CS510_PLC\Project3\AST-Project\ASTWebApp\bin\Debug\net9.
 C:\Users\dttru\OneDrive\CS510_PLC\Project3\AST-Project\ASTWebApp\bin\Debug\net9.0\ASTWebApp.pdb
 C:\Users\dttru\OneDrive\CS510_PLC\Project3\AST-Project\ASTWebApp\bin\Debug\net9.0\FSharp.Core.dll
 C:\Users\dttru\OneDrive\CS510_PLC\Project3\AST-Project\ASTWebApp\bin\Debug\net9.0\FsLexYacc.Runtime.dll
-C:\Users\dttru\OneDrive\CS510_PLC\Project3\AST-Project\ASTWebApp\bin\Debug\net9.0\Microsoft.AspNetCore.Server.Kestrel.Https.dll
-C:\Users\dttru\OneDrive\CS510_PLC\Project3\AST-Project\ASTWebApp\bin\Debug\net9.0\Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
 C:\Users\dttru\OneDrive\CS510_PLC\Project3\AST-Project\ASTWebApp\bin\Debug\net9.0\cs\FSharp.Core.resources.dll
 C:\Users\dttru\OneDrive\CS510_PLC\Project3\AST-Project\ASTWebApp\bin\Debug\net9.0\de\FSharp.Core.resources.dll
 C:\Users\dttru\OneDrive\CS510_PLC\Project3\AST-Project\ASTWebApp\bin\Debug\net9.0\es\FSharp.Core.resources.dll

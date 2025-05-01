@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroML Parser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>MicroML Code Parser</h1>
+    <form id="codeForm" method="post" action="/parse">
+        <textarea name="code" rows="10" cols="50"></textarea><br>
+        <input type="submit" value="Parse">
+    </form>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById("codeForm").onsubmit = async (event) => {
+            event.preventDefault();
+            let formData = new FormData(event.target);
+            let response = await fetch("/parse", {
+                method: "POST",
+                body: formData
+            });
+            let resultText = await response.text();
+            document.getElementById("result").innerText = resultText;
+        };
+    </script>
+</body>
+</html>
+
