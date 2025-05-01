@@ -58,6 +58,11 @@
               "version": "[11.3.0, )",
               "generatePathProperty": true
             },
+            "Giraffe": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
+            },
             "Microsoft.AspNetCore": {
               "target": "Package",
               "version": "[2.3.0, )",
