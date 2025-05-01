@@ -7,6 +7,8 @@ open System.Threading.Tasks
 
 open FunLex
 open FunPar
+
+open Spectre.Console
 open Absyn
 
 // A recursive function to print the AST

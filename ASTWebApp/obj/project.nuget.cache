@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "s0LVZZ0A2yE=",
+  "dgSpecHash": "LKuObE+lJ7M=",
   "success": true,
   "projectFilePath": "C:\\Users\\dttru\\OneDrive\\CS510_PLC\\Project3\\AST-Project\\ASTWebApp\\ASTWebApp.fsproj",
   "expectedPackageFiles": [
@@ -30,8 +30,10 @@
     "C:\\Users\\dttru\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\dttru\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\dttru\\.nuget\\packages\\ply\\0.3.1\\ply.0.3.1.nupkg.sha512",
+    "C:\\Users\\dttru\\.nuget\\packages\\spectre.console\\0.50.0\\spectre.console.0.50.0.nupkg.sha512",
     "C:\\Users\\dttru\\.nuget\\packages\\system.buffers\\4.6.0\\system.buffers.4.6.0.nupkg.sha512",
     "C:\\Users\\dttru\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\dttru\\.nuget\\packages\\system.memory\\4.6.3\\system.memory.4.6.3.nupkg.sha512",
     "C:\\Users\\dttru\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
     "C:\\Users\\dttru\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
     "C:\\Users\\dttru\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",

@@ -72,6 +72,10 @@
               "target": "Package",
               "version": "[2.3.0, )",
               "generatePathProperty": true
+            },
+            "Spectre.Console": {
+              "target": "Package",
+              "version": "[0.50.0, )"
             }
           },
           "imports": [

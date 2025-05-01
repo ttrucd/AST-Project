@@ -21,7 +21,7 @@
     <Compile Include="FunLex.fs" />
     <Compile Include="Parse.fs" />
     <Compile Include="ParseAndRun.fs" />
-    <Compile Include="App.fs"/>
+    <Compile Include="App.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
@@ -30,6 +30,7 @@
     <PackageReference Include="Giraffe" Version="5.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.3.0" />
+    <PackageReference Include="Spectre.Console" Version="0.50.0" />
   </ItemGroup>
 
 </Project>
