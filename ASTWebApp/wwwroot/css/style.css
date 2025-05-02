@@ -64,3 +64,15 @@ pre {
     border-radius: 4px;
     overflow-x: auto;
 }
+
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+}
+.node--internal circle {
+    fill: #555;
+}
+.node--leaf circle {
+    fill: #999;
+}

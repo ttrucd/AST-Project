@@ -10,7 +10,7 @@ open App
 
 // Configure services and application pipeline in one file
 let configureApp (app: IApplicationBuilder) =
-    app.UseStaticFiles() |>ignore
+    app.UseStaticFiles() |> ignore
     app.UseGiraffe(webApp())
 
 let configureServices (services: IServiceCollection) =

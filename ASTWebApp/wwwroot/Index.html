@@ -3,15 +3,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MicroML Parser</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="/js/ast.js" defer></script>
+    <script src="/js/main.js" defer></script>
 </head>
 <body>
     <h1>MicroML Code Parser</h1>
     <form id="codeForm" method="post" action="/parse">
-        <textarea name="code" rows="10" cols="50"></textarea><br>
-        <input type="submit" value="Parse">
+        <textarea id="input" name="code" rows="10" cols="50"></textarea><br>
+        <input type="submit" value="Parse" id="parse-btn">
     </form>
-    <div id="result"></div>
+
+    <h2>Raw AST JSON:</h2>
+    <pre id="result"></pre>
+
+    <h2>AST Tree:</h2>
+    <div id="tree"></div>
 
     <script>
         document.getElementById("codeForm").onsubmit = async (event) => {
@@ -21,8 +29,20 @@
                 method: "POST",
                 body: formData
             });
+
             let resultText = await response.text();
             document.getElementById("result").innerText = resultText;
+
+            // Clear previous tree
+            document.getElementById("tree").innerHTML = "";
+
+            // Parse JSON safely and draw tree
+            try {
+                let astJson = JSON.parse(resultText);
+                drawTree(astJson);
+            } catch (err) {
+                console.error("Invalid JSON returned from server:", err);
+            }
         };
     </script>
 </body>
