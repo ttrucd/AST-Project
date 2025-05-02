@@ -39,6 +39,11 @@
             // Parse JSON safely and draw tree
             try {
                 let astJson = JSON.parse(resultText);
+
+                if (astJson.Error) {
+                    alert("Server error: " + astJson.Error);
+                    return;
+                }
                 drawTree(astJson);
             } catch (err) {
                 console.error("Invalid JSON returned from server:", err);
