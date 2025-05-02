@@ -76,3 +76,17 @@ pre {
 .node--leaf circle {
     fill: #999;
 }
+
+#tree{
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+    margin-top:20px;
+}
+
+#tree svg {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 100%;
+    background-color: #f9f9f9;
+}

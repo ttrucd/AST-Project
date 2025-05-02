@@ -1,20 +1,31 @@
 //convert AST JSON into a tree
 function jsontoTree(json) {
-    var tree = {
-        name: json.Case,
-        children: (json.Fields || []).map(function(field) {
-            if (typeof field == 'object') {
-                return jsontoTree(field);
-            }
-            else{
-                return { name:field };
-            }
-        })
-    };
-    return tree; 
+    // Check if json is an object and has the 'Case' property
+    if (json && json.Case) {
+        return {
+            name: json.Case,  // Use the 'Case' value for the node's name
+            children: (json.Fields || []).map(function(field) {
+                if (typeof field === 'object') {
+                    // Recursively process if it's an object
+                    return jsontoTree(field);
+                } else {
+                    // else treat it as a leaf node with 'name' being the field value
+                    return { name: field.toString() };
+                }
+            })
+        };
+    } else {
+        // In case it's not an object, return it as a leaf node
+        return { name: json.toString() };
+    }
 }
 
+
 function drawTree(astData) {
+    // Check if astData is a string, and parse it if so
+    if (typeof astData === 'string') {
+        astData = JSON.parse(astData);  // Parse the JSON string into an object
+    }
     //Convert the AST Json into a format that D3 can use
     var root = jsontoTree(astData);
 
@@ -31,11 +42,11 @@ function drawTree(astData) {
 
     var treeLayout = d3.tree().size([height,width]);
 
-    var rootNode = d3.hierarchy(root, function(d) { return d.children;});
+    var rootNode = d3.hierarchy(root, function(d) { return d.children; });
+
     treeLayout(rootNode);
 
     //Create the links between nodes
-
     svg.selectAll('.link')
         .data(rootNode.links())
         .enter().append('path')
@@ -51,11 +62,14 @@ function drawTree(astData) {
         
     node.append('circle')
         .attr('r', 10)
+        .style('fill', '#fff')  // Add fill color
+        .style('stroke', '#000')  // Add stroke to make it visible
         .attr('class', function(d) { return d.children ? 'node--internal' : 'node--leaf'; });
 
-    node.append('text')
-        .attr('dy', '.35em')
-        .attr('x', function(d) { return d.children ? -13 : 13; })
-        .style('text-anchor', function(d) { return d.children ? 'end' : 'start'; })
-        .text(function(d) { return d.data.name; });  
-}
+        node.append('text')
+            .attr('dy', '.35em')
+            .attr('x', function(d) { return d.children ? -13 : 13; })
+            .style('text-anchor', function(d) { return d.children ? 'end' : 'start'; })
+            .style('fill', '#333')
+            .text(function(d) { return d.data.name; });  
+    }
