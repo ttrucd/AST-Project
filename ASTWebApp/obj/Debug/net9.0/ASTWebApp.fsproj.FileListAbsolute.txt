@@ -35,3 +35,4 @@ C:\Users\dttru\OneDrive\CS510_PLC\Project3\AST-Project\ASTWebApp\bin\Debug\net9.
 C:\Users\dttru\OneDrive\CS510_PLC\Project3\AST-Project\ASTWebApp\bin\Debug\net9.0\Newtonsoft.Json.dll
 C:\Users\dttru\OneDrive\CS510_PLC\Project3\AST-Project\ASTWebApp\bin\Debug\net9.0\Ply.dll
 C:\Users\dttru\OneDrive\CS510_PLC\Project3\AST-Project\ASTWebApp\bin\Debug\net9.0\Utf8Json.dll
+C:\Users\dttru\OneDrive\CS510_PLC\Project3\AST-Project\ASTWebApp\bin\Debug\net9.0\Spectre.Console.dll
