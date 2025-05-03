@@ -1,0 +1,34 @@
+# Build results
+bin/
+obj/
+
+# VS Code settings
+.vscode/
+
+# User-specific files
+*.user
+*.suo
+
+# Temporary files
+*.tmp
+*.temp
+
+# Logs
+*.log
+
+# ASP.NET Core secrets
+**/secrets.json
+
+# Dependency directories
+node_modules/
+packages/
+
+# Publish folder
+publish/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore SQLite DB if generated
+*.db
