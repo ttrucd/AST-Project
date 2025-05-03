@@ -1,12 +1,12 @@
 ## Abstract Syntax Trees (AST) Project
 # Thanh Dang
 
-A single web application that parses MicroMl code and draws Abstract Syntax Trees (AST).
+A single web application that parses MicroML code and draws Abstract Syntax Trees (AST).
 
 # Tech Stack
 Backend - F#, ASP.NET Core (Giraffe)
 Frontend - HTML, CSS, JavaScript, D3.js
-JSON - transfering the AST from backend to frontend
+JSON - transferring the AST from backend to frontend
 
 # Features
 MicroML code parser with lexer and parser.
@@ -28,5 +28,11 @@ let x = 5 in
 end
 
 # Screenshots of the web app 
+![image](https://github.com/user-attachments/assets/b2e171a1-e7c4-442a-a308-ddbdac0d023f)
+
+![image](https://github.com/user-attachments/assets/5a7b68f0-317e-4191-8570-bf71221bb0d1)
+
+
+
 
 
