@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,17 +10,43 @@
     
 </head>
 <body>
-    <h1>MicroML Code Parser</h1>
-    <form id="codeForm" method="post" action="/parse">
-        <textarea id="input" name="code" rows="10" cols="50"></textarea><br>
-        <input type="submit" value="Parse" id="parse-btn">
-    </form>
+    <div class="container">
+        <h1> ⋆˚✿˖° Abstract Syntax Tree (AST) Project ⋆˚✿˖°</h1>
 
-    <h2>Raw AST JSON:</h2>
-    <pre id="result"></pre>
+        <div class="note">
+            <h4> /\__,,,__/\ </h4>
+            <h4>꒰ ˶• ༝ - ˶꒱ </h4>
+            <h4>./づᡕᠵ᠊ᡃ~♡︎ Notes: </h4>
+            <ul> 
+                <li>Every <code>let</code> expression must end with <code>end</code>.</li>
+                <li>Use <code>in</code> to separate the bound variable from the body of the expression.</li>
+                <li>Example:
+                    let x = 5 in
+                    x + 1
+                    end
+            </ul>
 
-    <h2>AST Tree:</h2>
-    <div id="tree"></div>
+        </div>
+        <h4>୨ৎ Type in your MicroML code ୨ৎ</h4>
+        
+        <div class="input-container">
+            <form id="codeForm" method="post" action="/parse">
+                <textarea id="input" name="code" rows="10" cols="50"></textarea><br>
+                <input type="submit" value="Parse" id="parse-btn">
+        </form>
+    </div>
+
+        <div class="output-container">
+            <h2>After Parse ≽(•⩊ •マ≼</h2>
+            <pre id="result"></pre>
+
+            <h2>AST Tree ദ്ദി（• ˕ •マ.ᐟ</h2>
+            <div id="tree"></div>
+        </div>
+    </div>  
+</body>
+</html>
+
 
     <script>
         document.getElementById("codeForm").onsubmit = async (event) => {
@@ -50,6 +77,5 @@
             }
         };
     </script>
-</body>
-</html>
+
 

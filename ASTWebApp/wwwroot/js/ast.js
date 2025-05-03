@@ -60,16 +60,22 @@ function drawTree(astData) {
         .attr('class','node')
         .attr('transform', function(d) { return 'translate(' + d.y + ',' + d.x + ')';});
         
-    node.append('circle')
-        .attr('r', 10)
-        .style('fill', '#fff')  // Add fill color
-        .style('stroke', '#000')  // Add stroke to make it visible
-        .attr('class', function(d) { return d.children ? 'node--internal' : 'node--leaf'; });
+    // node.append('circle')
+    //     .attr('r', 10)
+    //     .style('fill', '#fff')  // Add fill color
+    //     .style('stroke', '#000')  // Add stroke to make it visible
+    //     .attr('class', function(d) { return d.children ? 'node--internal' : 'node--leaf'; });
 
-        node.append('text')
-            .attr('dy', '.35em')
-            .attr('x', function(d) { return d.children ? -13 : 13; })
-            .style('text-anchor', function(d) { return d.children ? 'end' : 'start'; })
-            .style('fill', '#333')
-            .text(function(d) { return d.data.name; });  
-    }
+    node.append('text')
+        .attr('dy', '.35em')
+        .attr('text-anchor', 'middle')
+        .attr('font-size', '25px')
+        .text('⭐');
+
+    node.append('text')
+        .attr('dy', '.35em')
+        .attr('x', function(d) { return d.children ? -13 : 13; })
+        .style('text-anchor', function(d) { return d.children ? 'end' : 'start'; })
+        .style('fill', '#333')
+        .text(function(d) { return d.data.name; });  
+}

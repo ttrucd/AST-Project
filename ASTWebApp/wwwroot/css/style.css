@@ -1,25 +1,35 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #dbb0c5;
     color: #333;
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
-    padding: 20px;
-    background-color: white;
+    padding: 10px;
+    
+    background-color: rgb(244, 236, 220);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
-    color: #4CAF50;
+    color: #7062c5;
 }
+h4 {
+    padding-left: 60px;
+    margin: 4px;
+    color: #7062c5;
+}
+.note ul{
+    padding-left: 90px;
+}
+
 
 /* Input Area */
 .input-container {
@@ -28,65 +38,68 @@ h1 {
 }
 
 textarea {
-    width: 100%;
-    padding: 10px;
+    width: 90%;
+    padding: 20px;
     font-size: 14px;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid #f5c2d7;
+    background-color: #cedaf6;
     resize: vertical;
 }
-
-button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
+input[type="submit"] {
+    background-color: #f78fb3;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
+    color: black;
+    padding: 10px 30px;
+    font-size: 14px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
-button:hover {
-    background-color: #45a049;
+input[type="submit"]:hover {
+    background-color: rgb(149, 111, 173) ;
+    
 }
+
 
 /* Output Area */
 .output-container {
     margin-top: 20px;
-    background-color: #f1f1f1;
+    background-color: rgb(244, 236, 220);
     padding: 10px;
     border-radius: 4px;
 }
 
 pre {
-    background-color: #2d2d2d;
-    color: white;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff0f5;
+    color: black;
     padding: 10px;
     border-radius: 4px;
+    border: 1px solid #f5c2d7;
     overflow-x: auto;
 }
 
 .link {
     fill: none;
-    stroke: #ccc;
+    stroke: #977989;
     stroke-width: 2px;
 }
-.node--internal circle {
-    fill: #555;
-}
-.node--leaf circle {
-    fill: #999;
-}
+
 
 #tree{
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
     height: 500px;
-    border: 1px solid black;
+    border: 1px solid #f5c2d7;
+    border-radius: 4px;
+    background-color:#fff0f5 ;
     margin-top:20px;
+    overflow: auto;
+    position: relative;
 }
 
-#tree svg {
-    border: 1px solid #ccc;
-    width: 100%;
-    height: 100%;
-    background-color: #f9f9f9;
-}
