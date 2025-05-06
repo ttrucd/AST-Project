@@ -12,13 +12,6 @@ open System.Text.Json
 open Newtonsoft.Json
 open Absyn
 
-let printTokens lexbuf =
-    let rec loop () =
-        match FunLex.Token lexbuf with
-        | EOF -> printfn "End of file"; ()
-        | token -> printfn "Token: %A" token; loop ()
-    loop ()
-
 // Parse the MicroML code into an AST
 let parse (input: string) : expr =
     let lexbuf = LexBuffer<char>.FromString input
